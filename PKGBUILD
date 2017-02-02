@@ -204,7 +204,7 @@ package_amdgpu-pro-vdpau () {
 	move_libdir "${pkgdir}/lib"
 
 	# extra_commands:
-        mkdir "${pkgdir}/usr/lib"
+        mkdir -p "${pkgdir}/usr/lib"
 	ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/vdpau/libvdpau_amdgpu.so.1.0.0 ${pkgdir}/usr/lib/libvdpau_amdgpu.so.1.0.0
 	ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/vdpau/libvdpau_amdgpu.so.1.0.0 ${pkgdir}/usr/lib/libvdpau_amdgpu.so.1
 	ln -s /opt/amdgpu-pro/lib/x86_64-linux-gnu/vdpau/libvdpau_amdgpu.so.1.0.0 ${pkgdir}/usr/lib/libvdpau_amdgpu.so
@@ -340,7 +340,7 @@ package_lib32-amdgpu-pro-vdpau () {
 	move_libdir "${pkgdir}/lib" "usr/lib32"
 
 	# extra_commands:
-	mkdir "${pkgdir}/usr/lib32"
+	mkdir -p "${pkgdir}/usr/lib32"
 	ln -s /opt/amdgpu-pro/lib/i386-linux-gnu/vdpau/libvdpau_amdgpu.so.1.0.0 ${pkgdir}/usr/lib32/libvdpau_amdgpu.so.1.0.0
 	ln -s /opt/amdgpu-pro/lib/i368-linux-gnu/vdpau/libvdpau_amdgpu.so.1.0.0 ${pkgdir}/usr/lib32/libvdpau_amdgpu.so.1
 	ln -s /opt/amdgpu-pro/lib/i368-linux-gnu/vdpau/libvdpau_amdgpu.so.1.0.0 ${pkgdir}/usr/lib32/libvdpau_amdgpu.so
